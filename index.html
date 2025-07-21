@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saurav Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+    background: linear-gradient(135deg , #0a143d , #5b548a);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      height: 80px;
+      background: rgb(56, 70, 161);
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      list-style: none;
+      margin: 0 23px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+    }
+
+    nav ul li a:hover {
+      color: rgb(203, 154, 226);
+      font-size: 1.01rem;
+    }
+
+    main hr {
+      border: 0;
+      background-color: rgb(76, 79, 167);
+      height: 3.2px;
+      margin: 60px 84px;
+    }
+
+    .left {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .firstsection {
+      display: flex;
+      justify-content: space-around;
+      margin: 105px 0;
+      align-items: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+
+    .firstsection>div {
+      width: 300px;
+    }
+
+    .leftsection {
+      font-size: 2.5rem;
+    }
+    .cv-box {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #2d49e9;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.download-btn {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 10px 0;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+  
+  transform: scale(1.05);
+}
+
+
+    .rightsection img {
+      width: 100%;
+      max-width: 300px;
+    }
+
+    .purple {
+      color: rgb(179, 98, 255);
+    }
+
+    #element {
+      color: rgb(179, 98, 255);
+    }
+
+    .secondsection {
+      max-width: 80vw;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    .secondsection h1 {
+      font-size: 1.9rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .box {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 auto 60px auto;
+      min-height: 200px;
+      text-align: center;
+    }
+
+    /* === Skills Section === */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background-color: #5959be;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .skill:hover {
+      background-color: #8e44ad;
+      color: #fff;
+      transform: scale(1.05);
+    }
+
+    /* === Projects Section === */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      
+    }
+
+    .project-item {
+      background-color: #2d49e9;
+      border: 1px solid #3b3d81;
+      padding: 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .project-item:hover {
+      background-color: #9898da;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-item h3 {
+      margin-bottom: 10px;
+    }
+
+    .project-item p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* === Contact Section === */
+    .contact {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact a {
+      color: #90cdf4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Saurav Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi, my name is <span class="purple">Saurav Maurya</span>
+        <div>and I am a</div> <span id="element"></span>
+        <br><br>
+  <div class="cv-box">
+    <a href="Saurav Maurya.pdf" download class="download-btn">Download CV</a>
+  </div>
+      </div>
+      <div class="rightsection">
+        <img src="pg.png" alt="My Photo" />
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- About Section -->
+    <section class="secondsection" id="about">
+      <h1>About Me</h1>
+      <div class="box">
+        I'm <strong>Saurav Maurya</strong>, a front-end developer passionate about building clean, responsive,
+        and user-friendly websites. I enjoy learning new technologies, solving real-world problems, and crafting
+        engaging web experiences.
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="secondsection" id="skills">
+      <h1>Skills</h1>
+      <div class="skills">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">java</span>
+        <span class="skill">Git</span>
+        <span class="skill">Excel</span>
+        <span class="skill">VS Code</span>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="secondsection" id="projects">
+      <h1>Projects</h1>
+      <div class="projects">
+        <div class="project-item">
+          <h3>Weather App</h3>
+          <p>A simple weather app using HTML, CSS, and JavaScript that fetches real-time weather data.</p>
+        </div>
+        
+        <div class="project-item">
+          <h3>Portfolio Website</h3>
+          <p>This portfolio site you're viewing now — responsive, clean, and custom built with HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="secondsection" id="contact">
+      <h1>Contact</h1>
+      <div class="contact">
+        <p>Email: <a href="mailto:your@email.com">mauryasaurav52@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/saurav6123</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">www.linkedin.com/in/saurav-maurya</a></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Frontend Developer', 'Web Designer', 'Problem Solver'],
+      typeSpeed: 50,
+      backSpeed: 40,
+      loop: true
+    });
+  </script>
+  
+</body>
+
+</html>
